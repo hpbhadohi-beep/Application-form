@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Student Registration Form</title>
+</head>
+<body>
+
+    <h2 align="center">Student Registration Form</h2>
+    <hr>
+
+    <form action="submit_form.php" method="post">
+
+        <!-- ======= Personal Information ======= -->
+        <fieldset>
+            <legend><b>Personal Information</b></legend>
+
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" size="30" placeholder="Enter your first name" required><br><br>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" size="30" placeholder="Enter your last name" required><br><br>
+
+            <label for="father">Father's Name:</label>
+            <input type="text" id="father" name="father" size="30" placeholder="Enter your father's name" required><br><br>
+
+            <label for="mother">Mother's Name:</label>
+            <input type="text" id="mother" name="mother" size="30" placeholder="Enter your mother's name" required><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male" required> <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female"> <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other"> <label for="other">Other</label><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" size="5" placeholder="Enter your age" min="1" max="100" required><br><br>
+
+            <label for="nationality">Nationality:</label>
+            <input type="text" id="nationality" name="nationality" size="30" placeholder="Enter your nationality" required><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- ======= Contact Information ======= -->
+        <fieldset>
+            <legend><b>Contact Details</b></legend>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" size="15" placeholder="10-digit mobile number" required><br><br>
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" size="30" placeholder="example@email.com" required><br><br>
+
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="40" placeholder="Enter your complete address" required></textarea><br><br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" size="25" placeholder="Enter your city" required><br><br>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" size="25" placeholder="Enter your state" required><br><br>
+
+            <label for="pincode">Pin Code:</label>
+            <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" size="10" placeholder="6-digit PIN" required><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- ======= Academic Details ======= -->
+        <fieldset>
+            <legend><b>Academic Information</b></legend>
+
+            <label for="course">Select Course:</label>
+            <select id="course" name="course" required>
+                <option value="">-- Select Course --</option>
+                <option value="BCA">BCA</option>
+                <option value="BBA">BBA</option>
+                <option value="B.Sc">B.Sc</option>
+                <option value="BA">BA</option>
+                <option value="MBA">MBA</option>
+                <option value="MCA">MCA</option>
+                <option value="B.Tech">B.Tech</option>
+            </select><br><br>
+
+            <label for="qualification">Highest Qualification:</label>
+            <input type="text" id="qualification" name="qualification" size="30" placeholder="e.g., 12th, Diploma, Graduate" required><br><br>
+
+            <label for="percentage">Last Exam Percentage:</label>
+            <input type="number" id="percentage" name="percentage" placeholder="%" min="0" max="100" required><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- ======= Account Section ======= -->
+        <fieldset>
+            <legend><b>Account Information</b></legend>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" size="30" placeholder="Create a username" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" size="30" placeholder="Enter password" required><br><br>
+
+            <label for="confirm">Confirm Password:</label>
+            <input type="password" id="confirm" name="confirm" size="30" placeholder="Re-enter password" required><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- ======= Agreement ======= -->
+        <fieldset>
+            <legend><b>Declaration</b></legend>
+
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I hereby declare that the information given above is true to the best of my knowledge.</label><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- ======= Buttons ======= -->
+        <div align="center">
+            <input type="reset" value="Reset Form">
+            <input type="submit" value="Submit Form">
+        </div>
+
+    </form>
+
+</body>
+</html>
